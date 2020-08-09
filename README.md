@@ -4,7 +4,8 @@ A sample Angular application to generate a calculator with Jasmine tests.
 
 ## Get started
 
-* Install Angular CLI and project packages by running `npm install -g @angular/cli && npm install`.
+* Install Angular CLI by running `npm install -g @angular/cli`.
+* Install project packages by running `npm install`.
 
 
 ## Development server
