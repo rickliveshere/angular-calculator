@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content:center;
+  padding: 2em;
+}
+
+input {
+  font-size: 4em;
+  max-width: 20%;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  margin-right: 1em;
+}
+
+.operand {
+  font-size: 4em;
+  padding: 0.5em;
+  width: 65px;
+  text-align: center;
+}
+
+.operands {
+  display: inline-flex;
+}
+
+.result {
+  padding: 0;
+  font-weight: bold;
+  font-size: 4em;
+  color: green;
+}
+

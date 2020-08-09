@@ -1,0 +1,21 @@
+
+  <div class=" container calculation">
+    <input type="number" [(ngModel)]="firstNumber" (keyup)="calculate()" />
+    <span class="operand">{{ operand }}</span>
+    <input type="number" [(ngModel)]="secondNumber" (keyup)="calculate()" />      
+  </div>
+  <div class="container controls">
+    <div class="operands">
+      <button (click)="setOperand('+')">+</button>
+      <button (click)="setOperand('-')">-</button>
+      <button (click)="setOperand('x')">x</button>
+      <button (click)="setOperand('/')">/</button>
+      <button (click)="clear(true)">C</button>
+    </div>    
+  </div>
+  <div class="container result">
+    <span *ngIf="isCalculation">{{ result }}</span>
+    <ul *ngIf="errors.length" class="errors">
+      <li *ngFor="let error of errors">{{error}}</li>
+    </ul>   
+  </div>
